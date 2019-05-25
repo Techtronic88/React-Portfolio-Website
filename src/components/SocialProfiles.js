@@ -1,23 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import SOCIALPROFILES from "../data/socialProfile";
 
 
-class SocialProfile extends Component {
-    render() {
+const SocialProfile = props => {
     
-    const {link, image} = this.props.socialProfile    
+    const {link, image} = props.socialProfile    
         return (
          <div style={{display: "inline-block"}}>
-         <a href={link}><img src={image} alt="social-profile" style={{ width: 50, height: 50, margin: 35 }}  /></a>
-         
+           <a href={link}><img src={image} alt="social-profile" style={{ width: 50, height: 50, margin: 35 }}  /></a>
          </div>   
-        )
-    }
+       )
 }
 
-class SocialProfiles extends Component {
-    render() { 
-        return (
+const SocialProfiles = () =>  (
         <div>
         {
             SOCIALPROFILES.map((PROFILE) => {
@@ -26,11 +21,7 @@ class SocialProfiles extends Component {
                 );
             })
         }
-
         </div>
         )
-    }
-} 
-
 export default SocialProfiles
 
