@@ -1,0 +1,32 @@
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(assets/roboto-condensed.light.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: EconomicaBold;
+    src: url(assets/economica-bold.ttf);
+
+}
+
+body {
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-family: "RobotoCondensed"
+}
+
+.profile {
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.2);
+}

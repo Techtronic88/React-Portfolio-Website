@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import PROJECTS from "./data/projects";
-import SOCIALPROFILE from "./data/socialProfile"
 
 class Project extends Component {
     render () {
         const {title, image, description, link} = this.props.project
 
         return (
-        <div style={{ display: "inline-block", width: 300, margin: 10 }}> 
+        <div style={{ display: "inline-block", width: 400, margin: 10 }}> 
             <h3>{title}</h3>
             <img src={image} alt="profile" style={{ width: 200, height: 120 }}  href={link} />
             <p>{description}</p>
@@ -16,19 +15,6 @@ class Project extends Component {
         )
     }
 }
-
-class SocialProfile extends Component {
-    render() {
-        const {image, name,} = this.props.images
-        return (
-        <div style={{ display: "inline-block", width: 300, margin: 10}}>
-            <p>{name}</p>
-            <img src={image} alt="profile" style={{width: 80, height: 80}}/>
-            
-        </div>
-        )
-    }
-} 
 
 class Projects extends Component {
     render() {
@@ -44,16 +30,6 @@ class Projects extends Component {
                     })
                 }
 
-            </div>
-            <h2> Social Media</h2>
-            <div>
-                {
-                    SOCIALPROFILE.map((PROFILE) => {
-                        return (
-                            <SocialProfile key={PROFILE.id} images={PROFILE} />
-                        );
-                    })
-                }
             </div>
         </div>
         )

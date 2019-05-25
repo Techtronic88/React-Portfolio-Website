@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Projects from "./Projects";
+import SocialProfiles from './SocialProfiles';
+import profilePic from "./assets/profilePic.jpg"
+import Title from "./Title.js"
+import "./index.css"
 
 class App extends Component {
     state = {displayBio: false}
@@ -29,15 +33,14 @@ class App extends Component {
         // if(!this.state.displayBio) using ! is equal to this.state.displayBio === false
         return (
             <div> 
-                <h1> Hello There </h1>
-                <p>  My name is Thomas. I am a software engineer </p>
-                <p>  This is my 5th time practicing  React and loving it</p>
+                <img src={profilePic} alt="profile" className="profile" />
+                <h1> Hello there, I am Tom </h1>
+                {this.state.displayBio ? <Title /> : null}
                 {
                     this.state.displayBio ?  (
                              <div>
-                                 <p> I live in Sydney, code everyday</p>
-                                 <p> Javascript is my favorite language, probably will learn Java next</p>
-                                 <p> Beside coding I walk and exercise alot</p>
+                                 <p> My current tech stack: HTML/CSS/Javascript/React-Redux-React Hooks.</p>
+                                 <p> I also like to solve business problems Product Management</p>
                                  <button onClick={this.toggleRender}> Show Less</button>
                              </div>
                          ): (
@@ -47,7 +50,9 @@ class App extends Component {
                          )
                     }
                 <hr />
-                <Projects />   
+                <Projects />  
+                <hr />
+                <SocialProfiles /> 
             </div>
         )
     }
