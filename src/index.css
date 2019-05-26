@@ -9,6 +9,9 @@
     src: url(assets/economica-bold.ttf);
 
 }
+h1, h2, h3, h4, h5 {
+    font-family: 'EconomicaBold';
+  }
 
 body {
     text-align: center;
@@ -53,5 +56,17 @@ body {
     to { opacity: 100}
 }
 
+button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #5b86e5;
+    color: white;
+ }
 
 

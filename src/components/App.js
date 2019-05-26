@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import SocialProfiles from './SocialProfiles';
 import profilePic from "../assets/profilePic.jpg"
 import Title from "./Title"
+import Jokes from "./Jokes"
 import "../index.css"
 
 class App extends Component {
@@ -53,7 +54,10 @@ class App extends Component {
                 <hr />
                 <Projects />  
                 <hr />
+                <h1>Connect with me</h1>
                 <SocialProfiles /> 
+                <hr />
+                <Jokes />
             </div>
         )
     }

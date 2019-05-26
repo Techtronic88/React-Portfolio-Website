@@ -1,5 +1,5 @@
 import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
+import API from "../assets/Api.png";
 import project3 from "../assets/project3.png";
 
 
@@ -16,7 +16,7 @@ const PROJECTS = [
       title: 'My API',
       description: 'A REST API that I built from scratch with GET and POST requests!',
       link: 'https://github.com/15Dkatz/example',
-      image: project2
+      image: API
     },
     {
       id: 3,
