@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 const Joke = ({joke:{setup, punchline} }) => 
 <p style={{margin: 20}}>{setup}<em>{punchline}</em></p>
 
@@ -25,7 +26,7 @@ class Jokes extends Component {
         return (
         <div> 
             <h2>Highlighted Joke</h2>
-           <Joke joke={this.state.joke} />
+            <Joke joke={this.state.joke} />
             <hr />
             <h3> Would you like 10 new Jokes ?</h3>
             <button onClick={this.getJokes}>Click me</button>

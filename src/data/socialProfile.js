@@ -3,7 +3,7 @@ import github_icon from "../assets/github_icon.png";
 import linkedin_icon from "../assets/linkedin_icon.png";
 import twitter_icon from "../assets/twitter_icon.png";
 
-const SOCIALPROFILE = [
+const SOCIALPROFILES = [
     {
      id: 1,   
      image: email_icon,
@@ -28,4 +28,4 @@ const SOCIALPROFILE = [
      link: "https://twitter.com/thomasdoan88"}
 ];
 
-export default SOCIALPROFILE;
+export default SOCIALPROFILES;
