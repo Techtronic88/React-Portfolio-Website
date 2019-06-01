@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 const TITLES = [
     "a software engineer / app developer",
     "an enthusiastic and keen learner",
-    "always open for new challenges"
+    "always up for new challenges"
 ];
 
 class Title extends Component {

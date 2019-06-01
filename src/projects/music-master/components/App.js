@@ -43,6 +43,7 @@ class App extends Component {
       <h2> Music Master</h2>
       <Search searchArtist={this.searchArtist}/>
       <Artist artist={artist} />
+      <hr />
       <Tracks tracks={tracks} />
     </div>
   )

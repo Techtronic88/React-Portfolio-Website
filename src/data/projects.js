@@ -1,28 +1,28 @@
-import project1 from "../assets/project1.png";
+import starsound from "../assets/starsound.jpg";
 import API from "../assets/Api.png";
-import project3 from "../assets/project3.png";
+import project3 from "../assets/project3.jpg";
 
 
 const PROJECTS = [
     {
       id: 1,
-      title: 'Example React Application',
-      description: 'A React App that I built, involving JS and core web dev concepts!',
+      title: 'STAR SOUND',
+      description: 'Seach, preview hit songs from your favorite artists ',
       link: 'https://github.com/15Dkatz/example',
-      image: project1
+      image: starsound
     },
     {
       id: 2,
-      title: 'My API',
-      description: 'A REST API that I built from scratch with GET and POST requests!',
+      title: 'MY API',
+      description: 'A REST API built with GET and POST requests!',
       link: 'https://github.com/15Dkatz/example',
       image: API
     },
     {
       id: 3,
-      title: 'Operating Systems Final Project',
-      description: 'My unique final project for my university Operating Systems course.',
-      link: 'https://github.com/15Dkatz/example',
+      title: "WEATHER AND TEMPERATURE UPDATE",
+      description: 'Check temperature, weather of your favorite cities',
+      link: 'https://quick-easy-weather-app.herokuapp.com/',
       image: project3
     }
   ];

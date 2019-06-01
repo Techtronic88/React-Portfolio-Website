@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 
-const Joke = ({joke:{setup, punchline} }) => 
-<p style={{margin: 20}}>{setup}<em>{punchline}</em></p>
-
-
 class Jokes extends Component { 
     state = { joke:{}, moreJokes: [] };
 
@@ -35,4 +31,11 @@ class Jokes extends Component {
         )
     }
 }
+
+
+const Joke = ({joke:{setup, punchline} }) => 
+<p style={{margin: 20}}>{setup}<em>{punchline}</em></p>
+
+
+
 export default Jokes;

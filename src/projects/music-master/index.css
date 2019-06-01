@@ -55,5 +55,16 @@ position: absolute;
 top: calc(50% - 45px);
 left: calc(50% - 35px);
 box-sizing: border-box;
-padding: 25px;
+padding: 20px;
+padding-top: 22px;
 } 
+
+.track-icon:hover {
+  background-color: #ffff00;
+  color: black;
+}
+
+input {
+padding: 10px;
+font-size: 15px;
+}

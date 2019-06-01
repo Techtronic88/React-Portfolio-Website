@@ -25,7 +25,7 @@ class App extends Component {
                                  
                                  <p> My current tech stack: HTML/CSS/Javascript/React-Redux-React Hooks.</p>
                                  <p> I am always interested in contributing to useful projects</p>
-                                 <p> I believe in combining Coding + Product Management = Magic</p>
+                                 <p> Great Design + Coding + Product Management = Magic</p>
                                  <button onClick={this.toggleRender}> Show Less</button>
                              </div>
                          ): (
