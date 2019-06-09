@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 
 
 class Jokes extends Component { 
-    state = { joke:{}, moreJokes: [] };
+    state = { joke:[], moreJokes: [] };
 
     componentDidMount() {
-        fetch ("https://official-joke-api.appspot.com/random_joke")
+        fetch ("https://official-joke-api.appspot.com/jokes/random")
                 .then(response =>  response.json())
                 .then(json => this.setState({joke: json}))
                 .catch(error => alert(error.message));
     }
 
     getJokes = () => {
-        fetch ("https://official-joke-api.appspot.com/random_ten")
+        fetch ("https://official-joke-api.appspot.com/jokes/programming/ten")
                 .then(response =>  response.json())
                 .then(json => this.setState({moreJokes: json})) 
                 .catch(error => alert(error.message));
@@ -32,10 +32,7 @@ class Jokes extends Component {
     }
 }
 
-
 const Joke = ({joke:{setup, punchline} }) => 
 <p style={{margin: 20}}>{setup}<em>{punchline}</em></p>
-
-
 
 export default Jokes;
