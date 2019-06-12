@@ -1,6 +1,8 @@
 import starsound from "../assets/starsound.jpg";
 import API from "../assets/Api.png";
 import project3 from "../assets/project3.jpg";
+// import { Link } from "react-router-dom"
+
 
 
 const PROJECTS = [
@@ -8,14 +10,14 @@ const PROJECTS = [
       id: 1,
       title: 'STAR SOUND',
       description: 'Seach, preview hit songs from your favorite artists ',
-      link: 'https://github.com/15Dkatz/example',
+      link: '/music-master',
       image: starsound
     },
     {
       id: 2,
       title: 'MY API',
       description: 'A REST API built with GET and POST requests!',
-      link: 'https://github.com/15Dkatz/example',
+      link: 'https://github.com',
       image: API
     },
     {
