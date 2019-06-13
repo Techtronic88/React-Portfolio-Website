@@ -1,28 +1,26 @@
 import starsound from "../assets/starsound.jpg";
-import API from "../assets/Api.png";
+import meditateApp from "../assets/MeditateApp.jpg";
 import project3 from "../assets/project3.jpg";
 // import { Link } from "react-router-dom"
-
-
 
 const PROJECTS = [
     {
       id: 1,
-      title: 'STAR SOUND',
+      title: 'Star Sound',
       description: 'Seach, preview hit songs from your favorite artists ',
       link: '/music-master',
       image: starsound
     },
     {
       id: 2,
-      title: 'MY API',
-      description: 'A REST API built with GET and POST requests!',
+      title: 'Getaway Meditation',
+      description: 'Refresh and relax with sounds and videos from nature',
       link: 'https://github.com',
-      image: API
+      image: meditateApp
     },
     {
       id: 3,
-      title: "WEATHER AND TEMPERATURE UPDATE",
+      title: "Weather and Temperature update",
       description: 'Check temperature, weather of your favorite cities',
       link: 'https://quick-easy-weather-app.herokuapp.com/',
       image: project3
