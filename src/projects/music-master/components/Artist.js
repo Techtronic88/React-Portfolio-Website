@@ -33,8 +33,6 @@ const Artist = ({artist}) => {
             />
         </div>
     )
-
-
 }
 
 export default Artist
