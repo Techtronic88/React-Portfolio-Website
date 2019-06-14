@@ -7,14 +7,17 @@ import "../App.css";
 const API_KEY = "9d3221eea82df792852a7272ce12430d";
 
 class App extends Component {
-
-  state = {
-    temperature: '',
-    city: '',
-    humidity: '',
-    description: '',
-    error: ''
+  constructor(props) {
+    super(props)
+    this.state = {
+      temperature: '',
+      city: '',
+      humidity: '',
+      description: '',
+      error: ''
+    }
   }
+
 
   getWeather = async(e) => {
     e.preventDefault();
