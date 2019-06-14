@@ -8,7 +8,6 @@ import App from "./components/App";
 import Jokes from "./components/Jokes";
 import Header from "./components/Header";
 import "./index.css";
-var PORT = process.env.PORT || 3000;
 
 
 ReactDOM.render(

@@ -1,5 +1,5 @@
 import starsound from "../assets/starsound.jpg";
-import meditateApp from "../assets/MeditateApp.jpg";
+// import meditateApp from "../assets/MeditateApp.jpg";
 import project3 from "../assets/project3.jpg";
 // import { Link } from "react-router-dom"
 
@@ -16,7 +16,7 @@ const PROJECTS = [
       title: 'Getaway Meditation',
       description: 'Refresh and relax with sounds and videos from nature',
       link: 'https://github.com',
-      image: meditateApp
+      // image: meditateApp
     },
     {
       id: 3,
