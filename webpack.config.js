@@ -19,10 +19,15 @@ module.exports = {
         loader: 'style-loader!css-loader',
         test: /\.css$/
       },
+      // {
+      //   loaders: [
+      //     { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+      //   ]
+      // },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
           use: [
-            'file-loader',
+            'file-loader?name=[name].[ext]&outputPath=js/js/assets/',
             {
               loader: 'image-webpack-loader',
               options: {
@@ -37,7 +42,7 @@ module.exports = {
               {
                 loader: 'ttf-loader',
                 options: {
-                  name: './font/[hash].[ext]',
+                  name: './js/font/[hash].[ext]',
                 },
               },
             ]
