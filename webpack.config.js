@@ -4,10 +4,10 @@ const path = require('path')
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'public', 'js'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public'),
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -19,22 +19,25 @@ module.exports = {
         loader: 'style-loader!css-loader',
         test: /\.css$/
       },
-      // {
-      //   loaders: [
-      //     { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
-      //   ]
-      // },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-          use: [
-            'file-loader?name=[name].[ext]&outputPath=js/js/assets/',
-            {
-              loader: 'image-webpack-loader',
-              options: {
-                bypassOnDebug: true, // webpack@1.x
-                disable: true, // webpack@2.x and newer
-              },
-            }]
+        test: /\.(svg|png|jpg|gif)$/,
+                use: {
+                 loader: "file-loader",
+                 options: {
+                     name:"[name].[ext]",
+                     outputPath: "images"
+                 } 
+               }
+        // test: /\.(gif|png|jpe?g|svg)$/i,
+        //   use: [
+        //     'file-loader?name=[name].[ext]&outputPath=js/js/assets/',
+        //     {
+        //       loader: 'image-webpack-loader',
+        //       options: {
+        //         bypassOnDebug: true, // webpack@1.x
+        //         disable: true, // webpack@2.x and newer
+        //       },
+        //     }]
           },
           {
             test: /\.ttf$/,
@@ -42,7 +45,8 @@ module.exports = {
               {
                 loader: 'ttf-loader',
                 options: {
-                  name: './js/font/[hash].[ext]',
+                  name: '[name].[ext]',
+                  outputPath: "font"
                 },
               },
             ]
