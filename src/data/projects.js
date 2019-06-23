@@ -1,22 +1,22 @@
 import starsound from "../assets/starsound.jpg";
-// import meditateApp from "../assets/MeditateApp.jpg";
+import meditate from "../assets/meditate.jpg";
 import project3 from "../assets/project3.jpg";
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const PROJECTS = [
     {
       id: 1,
       title: 'Star Sound',
       description: 'Seach, preview hit songs from your favorite artists ',
-      link: '/music-master',
+      link: null,
       image: starsound
     },
     {
       id: 2,
       title: 'Getaway Meditation',
       description: 'Refresh and relax with sounds and videos from nature',
-      link: 'https://github.com',
-      // image: meditateApp
+      link: 'https://getaway-meditation-app.netlify.com',
+      image: meditate
     },
     {
       id: 3,

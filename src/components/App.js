@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Projects from "./Projects";
 import SocialProfiles from './SocialProfiles';
-import profilePic from "../assets/profilePic.jpg"
+import profilePicture from "../assets/profilePicture.jpg"
 import Title from "./Title";
 import "../index.css"
 
@@ -12,20 +12,18 @@ class App extends Component {
     toggleRender = () => {
         this.setState({displayBio: !this.state.displayBio})
     }
-
     render() {
         return (
             <div> 
-                <img src={profilePic} alt="profile" className="profile" />
+                <img src={profilePicture} alt="profile" className="profile" />
                 <h1> Hello there, I am Tom </h1>
                 {this.state.displayBio ? <Title /> : null}
                 {
                     this.state.displayBio ?  (
                              <div>
-                                 
-                                 <p> My current tech stack: HTML/CSS/Javascript/React-Redux-React Hooks.</p>
-                                 <p> I am always interested in contributing to useful projects</p>
-                                 <p> Great Design + Coding + Product Management = Magic</p>
+                                 <p> Current tech stack: HTML-CSS-Javascript-Webpack-React-Redux.</p>
+                                 <p> I enjoy, love learning in depth Javascript and it's eco system.</p>
+                                 <p> Programming aside, I enjoy working as a product manager too</p>
                                  <button onClick={this.toggleRender}> Show Less</button>
                              </div>
                          ): (
@@ -43,6 +41,5 @@ class App extends Component {
         )
     }
 }
-
 export default App
 

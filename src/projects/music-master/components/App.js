@@ -10,7 +10,7 @@ class App extends Component {
   state = { artist: null, tracks: null}
 
   componentDidMount() {
-    this.searchArtist("John Lenon");
+    this.searchArtist(" ");
   }
 
   searchArtist = artistQuery => {
@@ -18,7 +18,6 @@ class App extends Component {
     .then(response => response.json())
     .then(json => {
         console.log('json', json);
-
         if (json.artists.total > 0) {
             const artist = json.artists.items[0];
 
@@ -31,9 +30,8 @@ class App extends Component {
                 .catch(error => alert(error.message))
          }
       })
-      .catch(error => alert(error.message)); 
+      .catch(error => console.log(error.message)); 
   }
-
 
   render () {
     console.log('this.state', this.state);

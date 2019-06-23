@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 const TITLES = [
     "a Javascript/ Front-end Developer",
-    "an enthusiastic and keen learner",
+    "a problem solver and life long learner",
     "always up for new challenges"
 ];
 
