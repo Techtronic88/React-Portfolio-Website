@@ -1,24 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Header = ({children}) => {
+const Header = ({ children }) => {
+  const style = {
+    display: "inline-block",
+    margin: 10,
+    marginBottom: 30
+  };
 
-    const style = {
-          display: "inline-block",
-          margin: 10,
-          marginBottom: 30
-    }
+  const linkStyle = {
+    textDecoration: "none"
+  };
 
-    return (
-    <div>       
-        <div>
-          <h3 style={style}><Link to="/">Home</Link></h3>
-          <h3 style={style}><Link to="/jokes">Jokes</Link></h3>
-          <h3 style={style}><Link to="/music-master">Star Sound</Link></h3>
-        </div>
-        {children}
-    </div>    
-    )
-}
+  return (
+    <div>
+      <div className="navBar">
+        <h3 style={style}>
+          <Link style={linkStyle} to="/">
+            Home
+          </Link>
+        </h3>
+        <h3 style={style}>
+          <Link style={linkStyle} to="/jokes">
+            Jokes
+          </Link>
+        </h3>
+        <h3 style={style}>
+          <Link style={linkStyle} to="/music-master">
+            Star Sound
+          </Link>
+        </h3>
+      </div>
+      {children}
+    </div>
+  );
+};
 
-export default Header
+export default Header;
